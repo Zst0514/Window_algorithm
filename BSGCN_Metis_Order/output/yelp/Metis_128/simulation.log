@@ -1,0 +1,111 @@
+Timestamp: 2025-10-29T17:53:44.878779
+Dataset: yelp
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/yelp
+
+Dataset Overview:
+  Nodes: 716847
+  Directed edges: 13954819
+  Undirected edges: 6618986
+  Average degree (undirected): 18.47
+
+Configuration Parameters:
+  T_ABS: 5
+  Smoothing window: 3 (mode: mean)
+  T_BAND: 128
+  HDN Top-K per partition: 4096
+  Requested partitions: 128
+  HDN-SPM size: 512 KB
+  Global Cache size: 16 KB
+  SMB size: 12 KB
+  Index CAM size: 12 KB
+  Feature length: 16
+  Feature dtype bytes: 8
+  MAC array shape: (1, 16)
+  Large band profiling rows: 32
+  Window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+
+Partition Summary:
+  Strategy: metis
+  Requested partitions: 128
+  Actual partitions: 128
+  Partition sizes: [5438, 5437, 5768, 5651, 5768, 5439, 5767, 5768, 5440, 5608, 5439, 5768, 5437, 5481, 5436, 5768, 5440, 5436, 5437, 5768, 5439, 5603, 5596, 5768, 5438, 5768, 5442, 5438, 5440, 5436, 5768, 5741, 5764, 5767, 5767, 5768, 5767, 5768, 5768, 5528, 5768, 5441, 5765, 5768, 5768, 5763, 5768, 5441, 5766, 5768, 5768, 5768, 5768, 5768, 5768, 5768, 5768, 5768, 5767, 5764, 5768, 5768, 5768, 5767, 5768, 5439, 5766, 5441, 5436, 5762, 5601, 5766, 5442, 5436, 5441, 5436, 5441, 5436, 5768, 5768, 5445, 5436, 5439, 5438, 5437, 5436, 5764, 5674, 5439, 5441, 5768, 5450, 5686, 5436, 5767, 5437, 5760, 5441, 5438, 5436, 5445, 5438, 5437, 5766, 5766, 5436, 5759, 5442, 5438, 5766, 5436, 5436, 5441, 5437, 5438, 5768, 5766, 5446, 5440, 5768, 5438, 5766, 5438, 5446, 5556, 5437, 5479, 5473]
+
+Band Summary:
+  Total bands: 210685
+  Small bands: 210666
+  Large bands: 19
+  HDNs in small bands: 514518 (98.14% of all HDNs)
+  HDNs in large bands: 9770 (1.86% of all HDNs)
+  LDNs in small bands: 188568 (97.93% of all LDNs)
+  LDNs in large bands: 3991 (2.07% of all LDNs)
+  Large band details:
+    - Rows [78428, 78562], length: 135
+    - Rows [100765, 100916], length: 152
+    - Rows [150721, 150853], length: 133
+    - Rows [161453, 161631], length: 179
+    - Rows [287649, 287777], length: 129
+    - Rows [310328, 310471], length: 144
+    - Rows [327512, 327646], length: 135
+    - Rows [356281, 356428], length: 148
+    - Rows [367946, 368088], length: 143
+    - Rows [407193, 407338], length: 146
+    - Rows [423684, 423857], length: 174
+    - Rows [589625, 589764], length: 140
+    - Rows [628462, 628736], length: 275
+    - Rows [684006, 684147], length: 142
+    - Rows [700543, 700848], length: 306
+    - Rows [701060, 701210], length: 151
+    - Rows [701293, 701426], length: 134
+    - Rows [705849, 710263], length: 4415
+    - Rows [710267, 716846], length: 6580
+
+Runtime log:
+Starting BSGCN simulation...
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/yelp
+Dataset summary -> nodes: 716847, directed edges: 13954819, undirected edges: 6618986, avg degree: 18.47
+Key configuration parameters:
+  - T_ABS: 5, smoothing window: 3 (mode: mean)
+  - T_BAND: 128
+  - HDN Top-K per partition: 4096, requested partitions: 128
+  - HDN-SPM size: 512 KB, Global Cache size: 16 KB
+  - SMB size: 12 KB, Index CAM size: 12 KB
+  - Feature length: 16 (dtype bytes: 8), MAC array shape: (1, 16)
+  - Large band profiling rows: 32, window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+Performing Metis reordering...
+Metis reordering with 128 parts complete.
+Partition sizes (after Metis reorder): [5438, 5437, 5768, 5651, 5768, 5439, 5767, 5768, 5440, 5608, 5439, 5768, 5437, 5481, 5436, 5768, 5440, 5436, 5437, 5768, 5439, 5603, 5596, 5768, 5438, 5768, 5442, 5438, 5440, 5436, 5768, 5741, 5764, 5767, 5767, 5768, 5767, 5768, 5768, 5528, 5768, 5441, 5765, 5768, 5768, 5763, 5768, 5441, 5766, 5768, 5768, 5768, 5768, 5768, 5768, 5768, 5768, 5768, 5767, 5764, 5768, 5768, 5768, 5767, 5768, 5439, 5766, 5441, 5436, 5762, 5601, 5766, 5442, 5436, 5441, 5436, 5441, 5436, 5768, 5768, 5445, 5436, 5439, 5438, 5437, 5436, 5764, 5674, 5439, 5441, 5768, 5450, 5686, 5436, 5767, 5437, 5760, 5441, 5438, 5436, 5445, 5438, 5437, 5766, 5766, 5436, 5759, 5442, 5438, 5766, 5436, 5436, 5441, 5437, 5438, 5768, 5766, 5446, 5440, 5768, 5438, 5766, 5438, 5446, 5556, 5437, 5479, 5473]
+Identifying HDNs using local partition-wise strategy...
+Identified 524288 unique HDNs across all partitions.
+Partitioning matrix into bands...
+
+--- Band Statistics ---
+Total number of bands: 210685
+Number of small bands: 210666
+Number of large bands: 19
+
+LDN distribution across bands:
+  - Small bands: 188568 LDNs (97.93% of all LDNs)
+  - Large bands: 3991 LDNs (2.07% of all LDNs)
+
+HDN distribution across bands:
+  - Small bands: 514518 HDNs (98.14% of all HDNs)
+  - Large bands: 9770 HDNs (1.86% of all HDNs)
+Processed 210666 small bands and 19 large bands
+
+Simulation complete. Final statistics will be reported.
+
+--- Simulation Statistics Report ---
+Total Execution Cycles: 52388874.0
+Total DRAM Data Read: 31.92 MB
+
+Cycle Breakdown:
+  - hdn_spm_access: 12976458 cycles (24.77%)
+  - computation: 13258232.0 cycles (25.31%)
+  - dram_access: 26150900 cycles (49.92%)
+  - glc_access: 3284 cycles (0.01%)
+
+Cache Performance:
+  - HDN-SPM: 5291275/13237972 hits (39.97% hit rate)
+  - Global Cache: 5/3284 hits (0.15% hit rate)
+    (LDN accesses in large bands: 3284)
+--- End of Report ---

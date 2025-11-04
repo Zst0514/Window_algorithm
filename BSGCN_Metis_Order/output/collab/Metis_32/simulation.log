@@ -1,0 +1,861 @@
+Timestamp: 2025-10-29T00:55:07.314165
+Dataset: collab
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/collab
+
+Dataset Overview:
+  Nodes: 372475
+  Directed edges: 24572158
+  Undirected edges: 12286079
+  Average degree (undirected): 65.97
+
+Configuration Parameters:
+  T_ABS: 65.97
+  Smoothing window: 1 (mode: mean)
+  T_BAND: 128
+  HDN Top-K per partition: 4096
+  Requested partitions: 32
+  HDN-SPM size: 512 KB
+  Global Cache size: 16 KB
+  SMB size: 12 KB
+  Index CAM size: 12 KB
+  Feature length: 16
+  Feature dtype bytes: 8
+  MAC array shape: (1, 16)
+  Large band profiling rows: 32
+  Window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+
+Partition Summary:
+  Strategy: metis
+  Requested partitions: 32
+  Actual partitions: 32
+  Partition sizes: [11647, 11638, 11641, 11640, 11634, 11634, 11644, 11641, 11643, 11647, 11642, 11636, 11635, 11641, 11639, 11637, 11633, 11638, 11644, 11639, 11641, 11634, 11651, 11632, 11642, 11643, 11632, 11645, 11639, 11636, 11642, 11645]
+
+Band Summary:
+  Total bands: 27160
+  Small bands: 26391
+  Large bands: 769
+  HDNs in small bands: 82792 (63.17% of all HDNs)
+  HDNs in large bands: 48280 (36.83% of all HDNs)
+  LDNs in small bands: 50125 (20.76% of all LDNs)
+  LDNs in large bands: 191278 (79.24% of all LDNs)
+  Large band details:
+    - Rows [0, 261], length: 262
+    - Rows [662, 956], length: 295
+    - Rows [1246, 1642], length: 397
+    - Rows [1643, 1789], length: 147
+    - Rows [1961, 2108], length: 148
+    - Rows [2110, 2416], length: 307
+    - Rows [2434, 2778], length: 345
+    - Rows [2944, 3274], length: 331
+    - Rows [3402, 3822], length: 421
+    - Rows [3823, 4265], length: 443
+    - Rows [4267, 4436], length: 170
+    - Rows [4571, 4924], length: 354
+    - Rows [5024, 5165], length: 142
+    - Rows [5167, 5532], length: 366
+    - Rows [5533, 5710], length: 178
+    - Rows [5712, 5864], length: 153
+    - Rows [5865, 6586], length: 722
+    - Rows [6661, 6928], length: 268
+    - Rows [7048, 7179], length: 132
+    - Rows [7180, 7922], length: 743
+    - Rows [7967, 8179], length: 213
+    - Rows [8888, 9067], length: 180
+    - Rows [9883, 10094], length: 212
+    - Rows [10441, 10603], length: 163
+    - Rows [10905, 11093], length: 189
+    - Rows [11094, 11765], length: 672
+    - Rows [11767, 12049], length: 283
+    - Rows [12050, 13122], length: 1073
+    - Rows [13124, 13292], length: 169
+    - Rows [13294, 13622], length: 329
+    - Rows [13624, 14494], length: 871
+    - Rows [14601, 14992], length: 392
+    - Rows [14994, 15386], length: 393
+    - Rows [15387, 15860], length: 474
+    - Rows [15862, 16777], length: 916
+    - Rows [16779, 17121], length: 343
+    - Rows [17123, 17486], length: 364
+    - Rows [17487, 17922], length: 436
+    - Rows [17923, 18070], length: 148
+    - Rows [18229, 18405], length: 177
+    - Rows [18717, 18862], length: 146
+    - Rows [19449, 19758], length: 310
+    - Rows [19839, 20035], length: 197
+    - Rows [21984, 22380], length: 397
+    - Rows [22382, 22645], length: 264
+    - Rows [22750, 22928], length: 179
+    - Rows [23046, 23284], length: 239
+    - Rows [23285, 23522], length: 238
+    - Rows [23523, 24073], length: 551
+    - Rows [24127, 24266], length: 140
+    - Rows [24370, 24670], length: 301
+    - Rows [24671, 26788], length: 2118
+    - Rows [26842, 27095], length: 254
+    - Rows [27097, 27257], length: 161
+    - Rows [27258, 27416], length: 159
+    - Rows [27417, 27565], length: 149
+    - Rows [27574, 27826], length: 253
+    - Rows [28044, 28487], length: 444
+    - Rows [28505, 29115], length: 611
+    - Rows [29117, 29462], length: 346
+    - Rows [29522, 29794], length: 273
+    - Rows [30448, 31059], length: 612
+    - Rows [32002, 32211], length: 210
+    - Rows [32534, 32965], length: 432
+    - Rows [33965, 34203], length: 239
+    - Rows [34260, 34486], length: 227
+    - Rows [34861, 35020], length: 160
+    - Rows [35090, 35388], length: 299
+    - Rows [35462, 35814], length: 353
+    - Rows [35816, 36268], length: 453
+    - Rows [36476, 36664], length: 189
+    - Rows [36928, 37112], length: 185
+    - Rows [37485, 37869], length: 385
+    - Rows [37871, 38062], length: 192
+    - Rows [38270, 38433], length: 164
+    - Rows [38531, 38731], length: 201
+    - Rows [38854, 39183], length: 330
+    - Rows [39268, 39600], length: 333
+    - Rows [39865, 40325], length: 461
+    - Rows [40403, 41174], length: 772
+    - Rows [41262, 41724], length: 463
+    - Rows [41726, 42097], length: 372
+    - Rows [42098, 42336], length: 239
+    - Rows [42337, 42572], length: 236
+    - Rows [42891, 43093], length: 203
+    - Rows [43162, 43312], length: 151
+    - Rows [44338, 44576], length: 239
+    - Rows [44577, 44861], length: 285
+    - Rows [44862, 45066], length: 205
+    - Rows [45715, 45961], length: 247
+    - Rows [46566, 46741], length: 176
+    - Rows [46743, 47051], length: 309
+    - Rows [47052, 47192], length: 141
+    - Rows [47194, 47348], length: 155
+    - Rows [47350, 47648], length: 299
+    - Rows [47649, 47817], length: 169
+    - Rows [47818, 48131], length: 314
+    - Rows [48228, 48442], length: 215
+    - Rows [48454, 48972], length: 519
+    - Rows [49009, 49157], length: 149
+    - Rows [49159, 49316], length: 158
+    - Rows [49531, 49713], length: 183
+    - Rows [49765, 49992], length: 228
+    - Rows [50416, 50615], length: 200
+    - Rows [50617, 51302], length: 686
+    - Rows [51358, 51600], length: 243
+    - Rows [51601, 51826], length: 226
+    - Rows [51828, 52020], length: 193
+    - Rows [52040, 52336], length: 297
+    - Rows [52497, 52674], length: 178
+    - Rows [53051, 53199], length: 149
+    - Rows [53201, 53340], length: 140
+    - Rows [53725, 53925], length: 201
+    - Rows [56424, 56662], length: 239
+    - Rows [56743, 56883], length: 141
+    - Rows [56976, 57161], length: 186
+    - Rows [58138, 58315], length: 178
+    - Rows [58317, 58459], length: 143
+    - Rows [58461, 58922], length: 462
+    - Rows [59041, 59219], length: 179
+    - Rows [59220, 59523], length: 304
+    - Rows [59525, 59654], length: 130
+    - Rows [59768, 59937], length: 170
+    - Rows [59939, 60152], length: 214
+    - Rows [60153, 60316], length: 164
+    - Rows [60318, 60714], length: 397
+    - Rows [60715, 61164], length: 450
+    - Rows [61166, 61504], length: 339
+    - Rows [61732, 62223], length: 492
+    - Rows [62225, 62372], length: 148
+    - Rows [62374, 62729], length: 356
+    - Rows [62822, 63036], length: 215
+    - Rows [63216, 63472], length: 257
+    - Rows [63474, 63622], length: 149
+    - Rows [63623, 63802], length: 180
+    - Rows [63803, 64312], length: 510
+    - Rows [64313, 64725], length: 413
+    - Rows [64727, 65287], length: 561
+    - Rows [65615, 65763], length: 149
+    - Rows [66493, 66654], length: 162
+    - Rows [66689, 66985], length: 297
+    - Rows [67154, 67370], length: 217
+    - Rows [67452, 67690], length: 239
+    - Rows [68348, 68687], length: 340
+    - Rows [68955, 69121], length: 167
+    - Rows [69344, 69576], length: 233
+    - Rows [69577, 69757], length: 181
+    - Rows [69759, 69901], length: 143
+    - Rows [69903, 70189], length: 287
+    - Rows [70190, 70684], length: 495
+    - Rows [70804, 71101], length: 298
+    - Rows [71601, 72038], length: 438
+    - Rows [72040, 72438], length: 399
+    - Rows [72440, 72619], length: 180
+    - Rows [72621, 72859], length: 239
+    - Rows [72860, 73039], length: 180
+    - Rows [73041, 73497], length: 457
+    - Rows [73499, 73730], length: 232
+    - Rows [73848, 74036], length: 189
+    - Rows [74140, 74414], length: 275
+    - Rows [74498, 74737], length: 240
+    - Rows [74738, 75007], length: 270
+    - Rows [75009, 75893], length: 885
+    - Rows [75996, 76125], length: 130
+    - Rows [76151, 76550], length: 400
+    - Rows [76888, 77273], length: 386
+    - Rows [77603, 77753], length: 151
+    - Rows [77853, 78006], length: 154
+    - Rows [78100, 78247], length: 148
+    - Rows [78424, 78552], length: 129
+    - Rows [78815, 79029], length: 215
+    - Rows [79918, 80302], length: 385
+    - Rows [80303, 80501], length: 199
+    - Rows [80543, 80735], length: 193
+    - Rows [81259, 81386], length: 128
+    - Rows [81387, 81943], length: 557
+    - Rows [81944, 82074], length: 131
+    - Rows [82131, 82309], length: 179
+    - Rows [82500, 82636], length: 137
+    - Rows [82783, 82939], length: 157
+    - Rows [83039, 83405], length: 367
+    - Rows [83406, 83592], length: 187
+    - Rows [83669, 83977], length: 309
+    - Rows [84383, 85074], length: 692
+    - Rows [85076, 85218], length: 143
+    - Rows [85738, 86370], length: 633
+    - Rows [86405, 87018], length: 614
+    - Rows [87555, 88305], length: 751
+    - Rows [88325, 88516], length: 192
+    - Rows [90120, 90330], length: 211
+    - Rows [90758, 90987], length: 230
+    - Rows [91077, 91370], length: 294
+    - Rows [91541, 91700], length: 160
+    - Rows [91701, 91871], length: 171
+    - Rows [92246, 92376], length: 131
+    - Rows [93007, 93385], length: 379
+    - Rows [93387, 93520], length: 134
+    - Rows [93522, 93775], length: 254
+    - Rows [93777, 93926], length: 150
+    - Rows [94022, 94379], length: 358
+    - Rows [94497, 94878], length: 382
+    - Rows [94965, 95268], length: 304
+    - Rows [95429, 95589], length: 161
+    - Rows [95591, 95797], length: 207
+    - Rows [95798, 96093], length: 296
+    - Rows [96095, 96225], length: 131
+    - Rows [96226, 96633], length: 408
+    - Rows [96666, 96897], length: 232
+    - Rows [96957, 97178], length: 222
+    - Rows [97271, 97433], length: 163
+    - Rows [97538, 97692], length: 155
+    - Rows [97694, 98029], length: 336
+    - Rows [98059, 98357], length: 299
+    - Rows [98406, 98581], length: 176
+    - Rows [98665, 98939], length: 275
+    - Rows [98940, 99178], length: 239
+    - Rows [99179, 99340], length: 162
+    - Rows [99341, 99572], length: 232
+    - Rows [99798, 100369], length: 572
+    - Rows [100643, 100772], length: 130
+    - Rows [100905, 101034], length: 130
+    - Rows [101379, 101733], length: 355
+    - Rows [103599, 103774], length: 176
+    - Rows [103775, 104155], length: 381
+    - Rows [104551, 104906], length: 356
+    - Rows [104908, 105797], length: 890
+    - Rows [106073, 106273], length: 201
+    - Rows [106518, 106899], length: 382
+    - Rows [106901, 107333], length: 433
+    - Rows [107534, 107711], length: 178
+    - Rows [107811, 108153], length: 343
+    - Rows [108267, 109084], length: 818
+    - Rows [109086, 109317], length: 232
+    - Rows [109424, 109702], length: 279
+    - Rows [109704, 110023], length: 320
+    - Rows [110097, 111127], length: 1031
+    - Rows [111132, 111267], length: 136
+    - Rows [111441, 111679], length: 239
+    - Rows [112906, 113340], length: 435
+    - Rows [113474, 113712], length: 239
+    - Rows [113752, 113990], length: 239
+    - Rows [114238, 114395], length: 158
+    - Rows [114396, 114636], length: 241
+    - Rows [115428, 115606], length: 179
+    - Rows [115651, 115889], length: 239
+    - Rows [116215, 116408], length: 194
+    - Rows [116409, 116628], length: 220
+    - Rows [116629, 116835], length: 207
+    - Rows [116836, 117292], length: 457
+    - Rows [117294, 117448], length: 155
+    - Rows [117454, 117755], length: 302
+    - Rows [117756, 118283], length: 528
+    - Rows [118472, 118689], length: 218
+    - Rows [118691, 119082], length: 392
+    - Rows [119084, 119487], length: 404
+    - Rows [119489, 119616], length: 128
+    - Rows [119705, 119898], length: 194
+    - Rows [120084, 120251], length: 168
+    - Rows [120362, 120692], length: 331
+    - Rows [120693, 120858], length: 166
+    - Rows [120937, 121395], length: 459
+    - Rows [121588, 121906], length: 319
+    - Rows [121997, 122766], length: 770
+    - Rows [122768, 123200], length: 433
+    - Rows [123288, 123526], length: 239
+    - Rows [124446, 124923], length: 478
+    - Rows [124924, 125063], length: 140
+    - Rows [125103, 125341], length: 239
+    - Rows [125342, 125512], length: 171
+    - Rows [125513, 125804], length: 292
+    - Rows [125888, 126126], length: 239
+    - Rows [126878, 127116], length: 239
+    - Rows [127216, 127361], length: 146
+    - Rows [127959, 128261], length: 303
+    - Rows [128351, 128852], length: 502
+    - Rows [129045, 129426], length: 382
+    - Rows [129427, 129627], length: 201
+    - Rows [129628, 129852], length: 225
+    - Rows [130175, 130364], length: 190
+    - Rows [130702, 130969], length: 268
+    - Rows [131024, 131270], length: 247
+    - Rows [131401, 131603], length: 203
+    - Rows [131605, 131935], length: 331
+    - Rows [131936, 132875], length: 940
+    - Rows [132877, 133031], length: 155
+    - Rows [133079, 133288], length: 210
+    - Rows [133290, 133669], length: 380
+    - Rows [133739, 133986], length: 248
+    - Rows [134462, 134601], length: 140
+    - Rows [135576, 135824], length: 249
+    - Rows [136251, 136668], length: 418
+    - Rows [136669, 136825], length: 157
+    - Rows [136826, 137064], length: 239
+    - Rows [137065, 137406], length: 342
+    - Rows [137407, 137593], length: 187
+    - Rows [138050, 138339], length: 290
+    - Rows [138962, 139349], length: 388
+    - Rows [139687, 140089], length: 403
+    - Rows [140091, 140695], length: 605
+    - Rows [140820, 141295], length: 476
+    - Rows [141297, 141432], length: 136
+    - Rows [141434, 141898], length: 465
+    - Rows [141899, 142209], length: 311
+    - Rows [142210, 142437], length: 228
+    - Rows [142438, 142711], length: 274
+    - Rows [142712, 142861], length: 150
+    - Rows [143350, 143781], length: 432
+    - Rows [143783, 143973], length: 191
+    - Rows [143975, 144480], length: 506
+    - Rows [144609, 144994], length: 386
+    - Rows [145044, 145698], length: 655
+    - Rows [145792, 145934], length: 143
+    - Rows [145942, 146103], length: 162
+    - Rows [146122, 146274], length: 153
+    - Rows [146275, 146567], length: 293
+    - Rows [146574, 146941], length: 368
+    - Rows [146942, 147272], length: 331
+    - Rows [147273, 147554], length: 282
+    - Rows [147956, 148146], length: 191
+    - Rows [148148, 148357], length: 210
+    - Rows [148699, 148883], length: 185
+    - Rows [149390, 149616], length: 227
+    - Rows [150254, 150457], length: 204
+    - Rows [150576, 150814], length: 239
+    - Rows [150815, 150970], length: 156
+    - Rows [151211, 151733], length: 523
+    - Rows [151849, 152059], length: 211
+    - Rows [152119, 152523], length: 405
+    - Rows [152525, 152741], length: 217
+    - Rows [152763, 153464], length: 702
+    - Rows [153466, 153650], length: 185
+    - Rows [153651, 153954], length: 304
+    - Rows [153956, 154190], length: 235
+    - Rows [154192, 154651], length: 460
+    - Rows [154818, 154948], length: 131
+    - Rows [154950, 155576], length: 627
+    - Rows [155578, 155712], length: 135
+    - Rows [155714, 155933], length: 220
+    - Rows [155935, 156213], length: 279
+    - Rows [156304, 157090], length: 787
+    - Rows [157092, 157901], length: 810
+    - Rows [157903, 158879], length: 977
+    - Rows [159017, 159195], length: 179
+    - Rows [159289, 159417], length: 129
+    - Rows [159682, 159856], length: 175
+    - Rows [161064, 161379], length: 316
+    - Rows [161670, 162089], length: 420
+    - Rows [162344, 162749], length: 406
+    - Rows [162894, 163241], length: 348
+    - Rows [163243, 163454], length: 212
+    - Rows [163456, 163656], length: 201
+    - Rows [163658, 163842], length: 185
+    - Rows [163844, 164033], length: 190
+    - Rows [164034, 164170], length: 137
+    - Rows [164295, 164547], length: 253
+    - Rows [164641, 164932], length: 292
+    - Rows [164934, 165379], length: 446
+    - Rows [165380, 165646], length: 267
+    - Rows [165647, 165996], length: 350
+    - Rows [166031, 166312], length: 282
+    - Rows [166657, 167146], length: 490
+    - Rows [167148, 167505], length: 358
+    - Rows [167630, 167786], length: 157
+    - Rows [167787, 168194], length: 408
+    - Rows [168196, 168496], length: 301
+    - Rows [168498, 169346], length: 849
+    - Rows [169438, 169706], length: 269
+    - Rows [170133, 170334], length: 202
+    - Rows [170763, 170920], length: 158
+    - Rows [170928, 171152], length: 225
+    - Rows [171850, 171996], length: 147
+    - Rows [172623, 172927], length: 305
+    - Rows [173003, 173458], length: 456
+    - Rows [173552, 173704], length: 153
+    - Rows [174056, 174297], length: 242
+    - Rows [174676, 174973], length: 298
+    - Rows [175006, 175591], length: 586
+    - Rows [175795, 176503], length: 709
+    - Rows [176505, 176718], length: 214
+    - Rows [176720, 176991], length: 272
+    - Rows [177388, 177548], length: 161
+    - Rows [177549, 177677], length: 129
+    - Rows [177679, 178154], length: 476
+    - Rows [178156, 178524], length: 369
+    - Rows [178526, 178977], length: 452
+    - Rows [179309, 179569], length: 261
+    - Rows [179570, 179922], length: 353
+    - Rows [179923, 180150], length: 228
+    - Rows [180152, 180379], length: 228
+    - Rows [180381, 181007], length: 627
+    - Rows [181009, 181212], length: 204
+    - Rows [181521, 181685], length: 165
+    - Rows [181724, 181940], length: 217
+    - Rows [182395, 182566], length: 172
+    - Rows [182932, 183083], length: 152
+    - Rows [183432, 183670], length: 239
+    - Rows [183671, 183838], length: 168
+    - Rows [184272, 184430], length: 159
+    - Rows [184881, 185120], length: 240
+    - Rows [185121, 185359], length: 239
+    - Rows [185360, 185562], length: 203
+    - Rows [186282, 186661], length: 380
+    - Rows [186830, 187439], length: 610
+    - Rows [187440, 187760], length: 321
+    - Rows [188025, 188265], length: 241
+    - Rows [188266, 188829], length: 564
+    - Rows [189032, 189185], length: 154
+    - Rows [189187, 189558], length: 372
+    - Rows [190048, 190971], length: 924
+    - Rows [190990, 191554], length: 565
+    - Rows [191555, 191981], length: 427
+    - Rows [192566, 192729], length: 164
+    - Rows [193144, 193283], length: 140
+    - Rows [194098, 194250], length: 153
+    - Rows [194967, 195162], length: 196
+    - Rows [195163, 195530], length: 368
+    - Rows [197710, 198025], length: 316
+    - Rows [198027, 198219], length: 193
+    - Rows [198617, 199556], length: 940
+    - Rows [199717, 200159], length: 443
+    - Rows [200229, 200549], length: 321
+    - Rows [200790, 201258], length: 469
+    - Rows [201374, 201665], length: 292
+    - Rows [201771, 202057], length: 287
+    - Rows [202234, 202369], length: 136
+    - Rows [202586, 202717], length: 132
+    - Rows [202718, 202855], length: 138
+    - Rows [203180, 203310], length: 131
+    - Rows [203319, 203717], length: 399
+    - Rows [203719, 204025], length: 307
+    - Rows [204026, 204199], length: 174
+    - Rows [204201, 204576], length: 376
+    - Rows [204678, 205166], length: 489
+    - Rows [205341, 205519], length: 179
+    - Rows [207389, 208472], length: 1084
+    - Rows [209177, 209325], length: 149
+    - Rows [209510, 209897], length: 388
+    - Rows [210270, 210640], length: 371
+    - Rows [210853, 211252], length: 400
+    - Rows [211253, 211684], length: 432
+    - Rows [211686, 211902], length: 217
+    - Rows [212252, 212399], length: 148
+    - Rows [212547, 213428], length: 882
+    - Rows [213588, 213911], length: 324
+    - Rows [213913, 214907], length: 995
+    - Rows [214909, 215115], length: 207
+    - Rows [215245, 215573], length: 329
+    - Rows [215574, 215812], length: 239
+    - Rows [216086, 216237], length: 152
+    - Rows [216540, 216766], length: 227
+    - Rows [217472, 218021], length: 550
+    - Rows [218022, 218172], length: 151
+    - Rows [218173, 218395], length: 223
+    - Rows [218396, 218637], length: 242
+    - Rows [218760, 219125], length: 366
+    - Rows [219126, 219364], length: 239
+    - Rows [219531, 219707], length: 177
+    - Rows [220923, 221489], length: 567
+    - Rows [221490, 221736], length: 247
+    - Rows [221738, 222093], length: 356
+    - Rows [222231, 222489], length: 259
+    - Rows [222575, 222738], length: 164
+    - Rows [222798, 222978], length: 181
+    - Rows [223016, 223143], length: 128
+    - Rows [223145, 223311], length: 167
+    - Rows [223312, 223475], length: 164
+    - Rows [223648, 223810], length: 163
+    - Rows [223879, 224866], length: 988
+    - Rows [224868, 225056], length: 189
+    - Rows [225057, 225331], length: 275
+    - Rows [225333, 225606], length: 274
+    - Rows [225608, 225882], length: 275
+    - Rows [225883, 226204], length: 322
+    - Rows [226206, 226537], length: 332
+    - Rows [226539, 226683], length: 145
+    - Rows [226780, 226936], length: 157
+    - Rows [227014, 227360], length: 347
+    - Rows [227361, 227550], length: 190
+    - Rows [227604, 227766], length: 163
+    - Rows [227767, 228005], length: 239
+    - Rows [228434, 228685], length: 252
+    - Rows [229060, 229246], length: 187
+    - Rows [229783, 229924], length: 142
+    - Rows [230620, 230845], length: 226
+    - Rows [230939, 231236], length: 298
+    - Rows [232022, 232260], length: 239
+    - Rows [232676, 233210], length: 535
+    - Rows [233397, 233543], length: 147
+    - Rows [233544, 233711], length: 168
+    - Rows [233767, 234194], length: 428
+    - Rows [234195, 234328], length: 134
+    - Rows [234938, 235085], length: 148
+    - Rows [235086, 235225], length: 140
+    - Rows [235227, 235821], length: 595
+    - Rows [235939, 236138], length: 200
+    - Rows [236414, 237060], length: 647
+    - Rows [237061, 237194], length: 134
+    - Rows [237537, 237830], length: 294
+    - Rows [238143, 238421], length: 279
+    - Rows [238452, 238779], length: 328
+    - Rows [238781, 239188], length: 408
+    - Rows [239190, 239695], length: 506
+    - Rows [240025, 240363], length: 339
+    - Rows [241065, 241238], length: 174
+    - Rows [241542, 241777], length: 236
+    - Rows [242346, 242483], length: 138
+    - Rows [243001, 243138], length: 138
+    - Rows [243679, 243835], length: 157
+    - Rows [243903, 244141], length: 239
+    - Rows [244142, 244433], length: 292
+    - Rows [244439, 244813], length: 375
+    - Rows [244815, 245100], length: 286
+    - Rows [245102, 245671], length: 570
+    - Rows [245673, 246070], length: 398
+    - Rows [246139, 246448], length: 310
+    - Rows [246450, 246611], length: 162
+    - Rows [246613, 246777], length: 165
+    - Rows [246779, 247183], length: 405
+    - Rows [247399, 247577], length: 179
+    - Rows [247764, 247958], length: 195
+    - Rows [247960, 248244], length: 285
+    - Rows [248246, 248545], length: 300
+    - Rows [248547, 248700], length: 154
+    - Rows [248702, 249192], length: 491
+    - Rows [249194, 249334], length: 141
+    - Rows [249569, 249775], length: 207
+    - Rows [249777, 250674], length: 898
+    - Rows [250797, 250976], length: 180
+    - Rows [251812, 251993], length: 182
+    - Rows [252093, 252609], length: 517
+    - Rows [253111, 253365], length: 255
+    - Rows [254206, 254340], length: 135
+    - Rows [254342, 254688], length: 347
+    - Rows [255021, 255259], length: 239
+    - Rows [255537, 255788], length: 252
+    - Rows [256120, 256403], length: 284
+    - Rows [256657, 256908], length: 252
+    - Rows [256909, 257403], length: 495
+    - Rows [257405, 257593], length: 189
+    - Rows [257594, 257907], length: 314
+    - Rows [257908, 258147], length: 240
+    - Rows [258149, 258368], length: 220
+    - Rows [258370, 258587], length: 218
+    - Rows [258588, 258800], length: 213
+    - Rows [258838, 259102], length: 265
+    - Rows [259104, 259261], length: 158
+    - Rows [259263, 259453], length: 191
+    - Rows [259454, 259621], length: 168
+    - Rows [259622, 261054], length: 1433
+    - Rows [261326, 261605], length: 280
+    - Rows [261687, 261874], length: 188
+    - Rows [263085, 263304], length: 220
+    - Rows [263305, 263526], length: 222
+    - Rows [264004, 264238], length: 235
+    - Rows [264309, 264477], length: 169
+    - Rows [265044, 265231], length: 188
+    - Rows [265481, 265608], length: 128
+    - Rows [265609, 265884], length: 276
+    - Rows [266648, 266887], length: 240
+    - Rows [267719, 267889], length: 171
+    - Rows [267891, 268113], length: 223
+    - Rows [268144, 268367], length: 224
+    - Rows [268369, 268705], length: 337
+    - Rows [268786, 269207], length: 422
+    - Rows [269208, 269367], length: 160
+    - Rows [269369, 269814], length: 446
+    - Rows [270030, 270399], length: 370
+    - Rows [270810, 271156], length: 347
+    - Rows [271157, 271492], length: 336
+    - Rows [271581, 271898], length: 318
+    - Rows [272082, 272223], length: 142
+    - Rows [272225, 272750], length: 526
+    - Rows [272752, 273194], length: 443
+    - Rows [273196, 273350], length: 155
+    - Rows [273352, 273519], length: 168
+    - Rows [273521, 273726], length: 206
+    - Rows [273967, 274241], length: 275
+    - Rows [274461, 274663], length: 203
+    - Rows [275613, 275862], length: 250
+    - Rows [275962, 276101], length: 140
+    - Rows [276701, 276962], length: 262
+    - Rows [278574, 278784], length: 211
+    - Rows [279171, 279457], length: 287
+    - Rows [279548, 279756], length: 209
+    - Rows [279757, 280178], length: 422
+    - Rows [280220, 280367], length: 148
+    - Rows [280369, 280710], length: 342
+    - Rows [280712, 281053], length: 342
+    - Rows [281154, 281586], length: 433
+    - Rows [281588, 281912], length: 325
+    - Rows [281914, 282227], length: 314
+    - Rows [282681, 282824], length: 144
+    - Rows [282921, 283509], length: 589
+    - Rows [283511, 283710], length: 200
+    - Rows [284065, 284276], length: 212
+    - Rows [284278, 284875], length: 598
+    - Rows [284924, 285204], length: 281
+    - Rows [285206, 285497], length: 292
+    - Rows [285706, 285944], length: 239
+    - Rows [285945, 286073], length: 129
+    - Rows [286261, 286451], length: 191
+    - Rows [286627, 286851], length: 225
+    - Rows [287110, 287424], length: 315
+    - Rows [287676, 287824], length: 149
+    - Rows [288604, 288842], length: 239
+    - Rows [288914, 289513], length: 600
+    - Rows [289553, 289915], length: 363
+    - Rows [289916, 290154], length: 239
+    - Rows [290993, 291609], length: 617
+    - Rows [291611, 291762], length: 152
+    - Rows [291764, 291894], length: 131
+    - Rows [292069, 292298], length: 230
+    - Rows [292422, 293144], length: 723
+    - Rows [293599, 294708], length: 1110
+    - Rows [294709, 295880], length: 1172
+    - Rows [295881, 296158], length: 278
+    - Rows [297028, 297647], length: 620
+    - Rows [297710, 297864], length: 155
+    - Rows [298537, 298704], length: 168
+    - Rows [299947, 300240], length: 294
+    - Rows [300732, 300920], length: 189
+    - Rows [301219, 301581], length: 363
+    - Rows [301582, 301929], length: 348
+    - Rows [302064, 302302], length: 239
+    - Rows [302476, 303067], length: 592
+    - Rows [303069, 303262], length: 194
+    - Rows [303353, 303634], length: 282
+    - Rows [303635, 304000], length: 366
+    - Rows [304001, 304191], length: 191
+    - Rows [304192, 304356], length: 165
+    - Rows [304497, 305042], length: 546
+    - Rows [305207, 305351], length: 145
+    - Rows [305353, 305666], length: 314
+    - Rows [305668, 305916], length: 249
+    - Rows [306150, 306330], length: 181
+    - Rows [306331, 306738], length: 408
+    - Rows [307201, 307332], length: 132
+    - Rows [307333, 308271], length: 939
+    - Rows [308337, 308818], length: 482
+    - Rows [308820, 309225], length: 406
+    - Rows [309910, 310168], length: 259
+    - Rows [311824, 312466], length: 643
+    - Rows [312751, 312993], length: 243
+    - Rows [312994, 313355], length: 362
+    - Rows [313694, 313845], length: 152
+    - Rows [314268, 314467], length: 200
+    - Rows [314631, 314870], length: 240
+    - Rows [314993, 315692], length: 700
+    - Rows [315694, 316079], length: 386
+    - Rows [316291, 316572], length: 282
+    - Rows [316574, 316725], length: 152
+    - Rows [316841, 317086], length: 246
+    - Rows [317340, 317537], length: 198
+    - Rows [317539, 317714], length: 176
+    - Rows [317815, 318445], length: 631
+    - Rows [318766, 318912], length: 147
+    - Rows [318913, 319206], length: 294
+    - Rows [319352, 319968], length: 617
+    - Rows [320054, 320488], length: 435
+    - Rows [320618, 320888], length: 271
+    - Rows [320890, 321121], length: 232
+    - Rows [321167, 321407], length: 241
+    - Rows [321408, 321646], length: 239
+    - Rows [321647, 321834], length: 188
+    - Rows [322671, 323109], length: 439
+    - Rows [323357, 323534], length: 178
+    - Rows [323793, 324022], length: 230
+    - Rows [325854, 326736], length: 883
+    - Rows [327062, 327276], length: 215
+    - Rows [327278, 327859], length: 582
+    - Rows [327861, 328358], length: 498
+    - Rows [328359, 328526], length: 168
+    - Rows [328587, 329066], length: 480
+    - Rows [329162, 329439], length: 278
+    - Rows [329591, 329774], length: 184
+    - Rows [329776, 330326], length: 551
+    - Rows [330328, 330462], length: 135
+    - Rows [330516, 331034], length: 519
+    - Rows [331097, 331390], length: 294
+    - Rows [331392, 331778], length: 387
+    - Rows [331799, 331971], length: 173
+    - Rows [331973, 332365], length: 393
+    - Rows [332367, 332664], length: 298
+    - Rows [332787, 332915], length: 129
+    - Rows [332917, 333269], length: 353
+    - Rows [333527, 333677], length: 151
+    - Rows [333678, 333916], length: 239
+    - Rows [333964, 334155], length: 192
+    - Rows [334283, 334603], length: 321
+    - Rows [334804, 335021], length: 218
+    - Rows [335023, 335402], length: 380
+    - Rows [335432, 335670], length: 239
+    - Rows [335671, 335929], length: 259
+    - Rows [336276, 336514], length: 239
+    - Rows [337380, 337592], length: 213
+    - Rows [337621, 337976], length: 356
+    - Rows [338114, 338282], length: 169
+    - Rows [338284, 338541], length: 258
+    - Rows [338542, 338989], length: 448
+    - Rows [338991, 339154], length: 164
+    - Rows [339308, 340236], length: 929
+    - Rows [340237, 340418], length: 182
+    - Rows [340420, 340763], length: 344
+    - Rows [340765, 341247], length: 483
+    - Rows [341248, 341592], length: 345
+    - Rows [341691, 341972], length: 282
+    - Rows [341974, 342319], length: 346
+    - Rows [342320, 342595], length: 276
+    - Rows [342685, 343413], length: 729
+    - Rows [343497, 343689], length: 193
+    - Rows [343795, 344048], length: 254
+    - Rows [344786, 344940], length: 155
+    - Rows [344942, 345398], length: 457
+    - Rows [345400, 346091], length: 692
+    - Rows [346092, 346386], length: 295
+    - Rows [346660, 346834], length: 175
+    - Rows [346900, 347072], length: 173
+    - Rows [347073, 347311], length: 239
+    - Rows [347312, 347456], length: 145
+    - Rows [347744, 347890], length: 147
+    - Rows [347891, 348134], length: 244
+    - Rows [348136, 348423], length: 288
+    - Rows [348515, 348798], length: 284
+    - Rows [349122, 349287], length: 166
+    - Rows [349319, 349565], length: 247
+    - Rows [349805, 350303], length: 499
+    - Rows [350543, 350902], length: 360
+    - Rows [351006, 351321], length: 316
+    - Rows [351500, 351703], length: 204
+    - Rows [351704, 351962], length: 259
+    - Rows [351964, 352128], length: 165
+    - Rows [352285, 352449], length: 165
+    - Rows [352451, 352830], length: 380
+    - Rows [352831, 353025], length: 195
+    - Rows [353204, 353913], length: 710
+    - Rows [354341, 354547], length: 207
+    - Rows [354549, 355187], length: 639
+    - Rows [355189, 355866], length: 678
+    - Rows [356253, 356511], length: 259
+    - Rows [357898, 358136], length: 239
+    - Rows [358137, 358325], length: 189
+    - Rows [358326, 358564], length: 239
+    - Rows [358565, 358709], length: 145
+    - Rows [358830, 359006], length: 177
+    - Rows [359362, 359692], length: 331
+    - Rows [360783, 360992], length: 210
+    - Rows [360994, 361374], length: 381
+    - Rows [361501, 361702], length: 202
+    - Rows [362172, 362427], length: 256
+    - Rows [362472, 362902], length: 431
+    - Rows [362903, 363348], length: 446
+    - Rows [363420, 363610], length: 191
+    - Rows [363611, 363778], length: 168
+    - Rows [363779, 364124], length: 346
+    - Rows [364126, 364399], length: 274
+    - Rows [364428, 365132], length: 705
+    - Rows [365133, 365960], length: 828
+    - Rows [365962, 366374], length: 413
+    - Rows [366376, 366784], length: 409
+    - Rows [366976, 367310], length: 335
+    - Rows [367426, 367974], length: 549
+    - Rows [367985, 368475], length: 491
+    - Rows [368477, 368665], length: 189
+    - Rows [369061, 369320], length: 260
+    - Rows [369321, 369501], length: 181
+    - Rows [370593, 370804], length: 212
+    - Rows [370984, 371483], length: 500
+    - Rows [371484, 371722], length: 239
+    - Rows [371856, 372396], length: 541
+
+Runtime log:
+Starting BSGCN simulation...
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/collab
+Dataset summary -> nodes: 372475, directed edges: 24572158, undirected edges: 12286079, avg degree: 65.97
+Key configuration parameters:
+  - T_ABS: 65.97, smoothing window: 1 (mode: mean)
+  - T_BAND: 128
+  - HDN Top-K per partition: 4096, requested partitions: 32
+  - HDN-SPM size: 512 KB, Global Cache size: 16 KB
+  - SMB size: 12 KB, Index CAM size: 12 KB
+  - Feature length: 16 (dtype bytes: 8), MAC array shape: (1, 16)
+  - Large band profiling rows: 32, window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+Performing Metis reordering...
+Metis reordering with 32 parts complete.
+Partition sizes (after Metis reorder): [11647, 11638, 11641, 11640, 11634, 11634, 11644, 11641, 11643, 11647, 11642, 11636, 11635, 11641, 11639, 11637, 11633, 11638, 11644, 11639, 11641, 11634, 11651, 11632, 11642, 11643, 11632, 11645, 11639, 11636, 11642, 11645]
+Identifying HDNs using local partition-wise strategy...
+Identified 131072 unique HDNs across all partitions.
+Partitioning matrix into bands...
+
+--- Band Statistics ---
+Total number of bands: 27160
+Number of small bands: 26391
+Number of large bands: 769
+
+LDN distribution across bands:
+  - Small bands: 50125 LDNs (20.76% of all LDNs)
+  - Large bands: 191278 LDNs (79.24% of all LDNs)
+
+HDN distribution across bands:
+  - Small bands: 82792 HDNs (63.17% of all HDNs)
+  - Large bands: 48280 HDNs (36.83% of all HDNs)
+Processed 26391 small bands and 769 large bands
+
+Simulation complete. Final statistics will be reported.
+
+--- Simulation Statistics Report ---
+Total Execution Cycles: 210674088.0
+Total DRAM Data Read: 187.43 MB
+
+Cycle Breakdown:
+  - glc_access: 3981045 cycles (1.89%)
+  - dram_access: 153540300 cycles (72.88%)
+  - computation: 33866737.0 cycles (16.08%)
+  - hdn_spm_access: 19286006 cycles (9.15%)
+
+Cache Performance:
+  - HDN-SPM: 19154934/24572158 hits (77.95% hit rate)
+  - Global Cache: 3750749/3981045 hits (94.22% hit rate)
+    (LDN accesses in large bands: 3981045)
+--- End of Report ---

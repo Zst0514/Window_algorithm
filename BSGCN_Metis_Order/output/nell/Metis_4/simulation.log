@@ -1,0 +1,332 @@
+Timestamp: 2025-10-28T17:04:53.459343
+Dataset: nell
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/nell
+
+Dataset Overview:
+  Nodes: 65755
+  Directed edges: 251550
+  Undirected edges: 125775
+  Average degree (undirected): 3.83
+
+Configuration Parameters:
+  T_ABS: 4
+  Smoothing window: 2 (mode: mean)
+  T_BAND: 128
+  HDN Top-K per partition: 4096
+  Requested partitions: 4
+  HDN-SPM size: 512 KB
+  Global Cache size: 16 KB
+  SMB size: 12 KB
+  Index CAM size: 12 KB
+  Feature length: 16
+  Feature dtype bytes: 8
+  MAC array shape: (1, 16)
+  Large band profiling rows: 32
+  Window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+
+Partition Summary:
+  Strategy: metis
+  Requested partitions: 4
+  Actual partitions: 4
+  Partition sizes: [16438, 16439, 16439, 16439]
+
+Band Summary:
+  Total bands: 2221
+  Small bands: 2103
+  Large bands: 118
+  HDNs in small bands: 7640 (46.63% of all HDNs)
+  HDNs in large bands: 8744 (53.37% of all HDNs)
+  LDNs in small bands: 15876 (32.16% of all LDNs)
+  LDNs in large bands: 33495 (67.84% of all LDNs)
+  Large band details:
+    - Rows [2603, 2870], length: 268
+    - Rows [4528, 4679], length: 152
+    - Rows [4728, 4892], length: 165
+    - Rows [6186, 6776], length: 591
+    - Rows [7161, 7398], length: 238
+    - Rows [7645, 8120], length: 476
+    - Rows [8996, 9142], length: 147
+    - Rows [9143, 9308], length: 166
+    - Rows [9507, 9865], length: 359
+    - Rows [10039, 10197], length: 159
+    - Rows [10218, 11194], length: 977
+    - Rows [11195, 12214], length: 1020
+    - Rows [12827, 13470], length: 644
+    - Rows [13535, 14049], length: 515
+    - Rows [14260, 14443], length: 184
+    - Rows [14446, 14585], length: 140
+    - Rows [14603, 14871], length: 269
+    - Rows [14872, 15493], length: 622
+    - Rows [15639, 15896], length: 258
+    - Rows [16153, 18725], length: 2573
+    - Rows [19187, 19353], length: 167
+    - Rows [19675, 19859], length: 185
+    - Rows [19918, 20050], length: 133
+    - Rows [20128, 20863], length: 736
+    - Rows [20866, 21089], length: 224
+    - Rows [21092, 21947], length: 856
+    - Rows [21997, 22127], length: 131
+    - Rows [22328, 22480], length: 153
+    - Rows [22491, 23112], length: 622
+    - Rows [23372, 23615], length: 244
+    - Rows [23716, 23909], length: 194
+    - Rows [23912, 24705], length: 794
+    - Rows [24813, 24947], length: 135
+    - Rows [24950, 25370], length: 421
+    - Rows [25447, 25585], length: 139
+    - Rows [25588, 25722], length: 135
+    - Rows [25749, 25877], length: 129
+    - Rows [25882, 26179], length: 298
+    - Rows [27018, 27991], length: 974
+    - Rows [27994, 28458], length: 465
+    - Rows [28548, 28812], length: 265
+    - Rows [28941, 29415], length: 475
+    - Rows [29473, 30727], length: 1255
+    - Rows [31144, 32166], length: 1023
+    - Rows [32169, 32516], length: 348
+    - Rows [32519, 32734], length: 216
+    - Rows [32738, 33249], length: 512
+    - Rows [33252, 33876], length: 625
+    - Rows [33954, 34494], length: 541
+    - Rows [34538, 34948], length: 411
+    - Rows [36310, 36442], length: 133
+    - Rows [36791, 36955], length: 165
+    - Rows [36979, 37254], length: 276
+    - Rows [37647, 37803], length: 157
+    - Rows [37804, 38129], length: 326
+    - Rows [38409, 38570], length: 162
+    - Rows [38705, 38882], length: 178
+    - Rows [38885, 39012], length: 128
+    - Rows [39316, 39453], length: 138
+    - Rows [39693, 39877], length: 185
+    - Rows [40481, 40630], length: 150
+    - Rows [40786, 40950], length: 165
+    - Rows [40975, 41108], length: 134
+    - Rows [41111, 41244], length: 134
+    - Rows [41689, 41849], length: 161
+    - Rows [41852, 42013], length: 162
+    - Rows [42025, 42407], length: 383
+    - Rows [42517, 42934], length: 418
+    - Rows [42967, 43448], length: 482
+    - Rows [43449, 43634], length: 186
+    - Rows [43713, 43905], length: 193
+    - Rows [43911, 44077], length: 167
+    - Rows [44078, 44238], length: 161
+    - Rows [44340, 44473], length: 134
+    - Rows [44474, 44737], length: 264
+    - Rows [44738, 44878], length: 141
+    - Rows [44881, 45167], length: 287
+    - Rows [45170, 45831], length: 662
+    - Rows [45834, 46625], length: 792
+    - Rows [46692, 47006], length: 315
+    - Rows [47007, 47163], length: 157
+    - Rows [47166, 48397], length: 1232
+    - Rows [48400, 49071], length: 672
+    - Rows [49165, 49345], length: 181
+    - Rows [49383, 49532], length: 150
+    - Rows [49848, 50105], length: 258
+    - Rows [50335, 50601], length: 267
+    - Rows [50850, 51102], length: 253
+    - Rows [51128, 51286], length: 159
+    - Rows [53610, 53777], length: 168
+    - Rows [54358, 54571], length: 214
+    - Rows [54640, 54775], length: 136
+    - Rows [54776, 55028], length: 253
+    - Rows [55145, 55282], length: 138
+    - Rows [55541, 55715], length: 175
+    - Rows [55767, 55910], length: 144
+    - Rows [55974, 56183], length: 210
+    - Rows [56521, 56735], length: 215
+    - Rows [57032, 57337], length: 306
+    - Rows [57341, 57500], length: 160
+    - Rows [57512, 57734], length: 223
+    - Rows [57737, 57942], length: 206
+    - Rows [57951, 59444], length: 1494
+    - Rows [59479, 59741], length: 263
+    - Rows [60325, 60554], length: 230
+    - Rows [60555, 60799], length: 245
+    - Rows [60881, 61042], length: 162
+    - Rows [61197, 61925], length: 729
+    - Rows [62013, 62149], length: 137
+    - Rows [62257, 62498], length: 242
+    - Rows [62774, 63834], length: 1061
+    - Rows [63837, 64002], length: 166
+    - Rows [64098, 64268], length: 171
+    - Rows [64318, 64837], length: 520
+    - Rows [64856, 65042], length: 187
+    - Rows [65064, 65246], length: 183
+    - Rows [65249, 65491], length: 243
+    - Rows [65494, 65754], length: 261
+
+Runtime log:
+Starting BSGCN simulation...
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/nell
+Dataset summary -> nodes: 65755, directed edges: 251550, undirected edges: 125775, avg degree: 3.83
+Key configuration parameters:
+  - T_ABS: 4, smoothing window: 2 (mode: mean)
+  - T_BAND: 128
+  - HDN Top-K per partition: 4096, requested partitions: 4
+  - HDN-SPM size: 512 KB, Global Cache size: 16 KB
+  - SMB size: 12 KB, Index CAM size: 12 KB
+  - Feature length: 16 (dtype bytes: 8), MAC array shape: (1, 16)
+  - Large band profiling rows: 32, window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+Performing Metis reordering...
+Metis reordering with 4 parts complete.
+Partition sizes (after Metis reorder): [16438, 16439, 16439, 16439]
+Identifying HDNs using local partition-wise strategy...
+Identified 16384 unique HDNs across all partitions.
+Partitioning matrix into bands...
+
+--- Band Statistics ---
+Total number of bands: 2221
+Number of small bands: 2103
+Number of large bands: 118
+
+LDN distribution across bands:
+  - Small bands: 15876 LDNs (32.16% of all LDNs)
+  - Large bands: 33495 LDNs (67.84% of all LDNs)
+
+HDN distribution across bands:
+  - Small bands: 7640 HDNs (46.63% of all HDNs)
+  - Large bands: 8744 HDNs (53.37% of all HDNs)
+
+Details of large bands:
+  - Node ID Range: [2603, 2870], Length: 268 rows
+  - Node ID Range: [4528, 4679], Length: 152 rows
+  - Node ID Range: [4728, 4892], Length: 165 rows
+  - Node ID Range: [6186, 6776], Length: 591 rows
+  - Node ID Range: [7161, 7398], Length: 238 rows
+  - Node ID Range: [7645, 8120], Length: 476 rows
+  - Node ID Range: [8996, 9142], Length: 147 rows
+  - Node ID Range: [9143, 9308], Length: 166 rows
+  - Node ID Range: [9507, 9865], Length: 359 rows
+  - Node ID Range: [10039, 10197], Length: 159 rows
+  - Node ID Range: [10218, 11194], Length: 977 rows
+  - Node ID Range: [11195, 12214], Length: 1020 rows
+  - Node ID Range: [12827, 13470], Length: 644 rows
+  - Node ID Range: [13535, 14049], Length: 515 rows
+  - Node ID Range: [14260, 14443], Length: 184 rows
+  - Node ID Range: [14446, 14585], Length: 140 rows
+  - Node ID Range: [14603, 14871], Length: 269 rows
+  - Node ID Range: [14872, 15493], Length: 622 rows
+  - Node ID Range: [15639, 15896], Length: 258 rows
+  - Node ID Range: [16153, 18725], Length: 2573 rows
+  - Node ID Range: [19187, 19353], Length: 167 rows
+  - Node ID Range: [19675, 19859], Length: 185 rows
+  - Node ID Range: [19918, 20050], Length: 133 rows
+  - Node ID Range: [20128, 20863], Length: 736 rows
+  - Node ID Range: [20866, 21089], Length: 224 rows
+  - Node ID Range: [21092, 21947], Length: 856 rows
+  - Node ID Range: [21997, 22127], Length: 131 rows
+  - Node ID Range: [22328, 22480], Length: 153 rows
+  - Node ID Range: [22491, 23112], Length: 622 rows
+  - Node ID Range: [23372, 23615], Length: 244 rows
+  - Node ID Range: [23716, 23909], Length: 194 rows
+  - Node ID Range: [23912, 24705], Length: 794 rows
+  - Node ID Range: [24813, 24947], Length: 135 rows
+  - Node ID Range: [24950, 25370], Length: 421 rows
+  - Node ID Range: [25447, 25585], Length: 139 rows
+  - Node ID Range: [25588, 25722], Length: 135 rows
+  - Node ID Range: [25749, 25877], Length: 129 rows
+  - Node ID Range: [25882, 26179], Length: 298 rows
+  - Node ID Range: [27018, 27991], Length: 974 rows
+  - Node ID Range: [27994, 28458], Length: 465 rows
+  - Node ID Range: [28548, 28812], Length: 265 rows
+  - Node ID Range: [28941, 29415], Length: 475 rows
+  - Node ID Range: [29473, 30727], Length: 1255 rows
+  - Node ID Range: [31144, 32166], Length: 1023 rows
+  - Node ID Range: [32169, 32516], Length: 348 rows
+  - Node ID Range: [32519, 32734], Length: 216 rows
+  - Node ID Range: [32738, 33249], Length: 512 rows
+  - Node ID Range: [33252, 33876], Length: 625 rows
+  - Node ID Range: [33954, 34494], Length: 541 rows
+  - Node ID Range: [34538, 34948], Length: 411 rows
+  - Node ID Range: [36310, 36442], Length: 133 rows
+  - Node ID Range: [36791, 36955], Length: 165 rows
+  - Node ID Range: [36979, 37254], Length: 276 rows
+  - Node ID Range: [37647, 37803], Length: 157 rows
+  - Node ID Range: [37804, 38129], Length: 326 rows
+  - Node ID Range: [38409, 38570], Length: 162 rows
+  - Node ID Range: [38705, 38882], Length: 178 rows
+  - Node ID Range: [38885, 39012], Length: 128 rows
+  - Node ID Range: [39316, 39453], Length: 138 rows
+  - Node ID Range: [39693, 39877], Length: 185 rows
+  - Node ID Range: [40481, 40630], Length: 150 rows
+  - Node ID Range: [40786, 40950], Length: 165 rows
+  - Node ID Range: [40975, 41108], Length: 134 rows
+  - Node ID Range: [41111, 41244], Length: 134 rows
+  - Node ID Range: [41689, 41849], Length: 161 rows
+  - Node ID Range: [41852, 42013], Length: 162 rows
+  - Node ID Range: [42025, 42407], Length: 383 rows
+  - Node ID Range: [42517, 42934], Length: 418 rows
+  - Node ID Range: [42967, 43448], Length: 482 rows
+  - Node ID Range: [43449, 43634], Length: 186 rows
+  - Node ID Range: [43713, 43905], Length: 193 rows
+  - Node ID Range: [43911, 44077], Length: 167 rows
+  - Node ID Range: [44078, 44238], Length: 161 rows
+  - Node ID Range: [44340, 44473], Length: 134 rows
+  - Node ID Range: [44474, 44737], Length: 264 rows
+  - Node ID Range: [44738, 44878], Length: 141 rows
+  - Node ID Range: [44881, 45167], Length: 287 rows
+  - Node ID Range: [45170, 45831], Length: 662 rows
+  - Node ID Range: [45834, 46625], Length: 792 rows
+  - Node ID Range: [46692, 47006], Length: 315 rows
+  - Node ID Range: [47007, 47163], Length: 157 rows
+  - Node ID Range: [47166, 48397], Length: 1232 rows
+  - Node ID Range: [48400, 49071], Length: 672 rows
+  - Node ID Range: [49165, 49345], Length: 181 rows
+  - Node ID Range: [49383, 49532], Length: 150 rows
+  - Node ID Range: [49848, 50105], Length: 258 rows
+  - Node ID Range: [50335, 50601], Length: 267 rows
+  - Node ID Range: [50850, 51102], Length: 253 rows
+  - Node ID Range: [51128, 51286], Length: 159 rows
+  - Node ID Range: [53610, 53777], Length: 168 rows
+  - Node ID Range: [54358, 54571], Length: 214 rows
+  - Node ID Range: [54640, 54775], Length: 136 rows
+  - Node ID Range: [54776, 55028], Length: 253 rows
+  - Node ID Range: [55145, 55282], Length: 138 rows
+  - Node ID Range: [55541, 55715], Length: 175 rows
+  - Node ID Range: [55767, 55910], Length: 144 rows
+  - Node ID Range: [55974, 56183], Length: 210 rows
+  - Node ID Range: [56521, 56735], Length: 215 rows
+  - Node ID Range: [57032, 57337], Length: 306 rows
+  - Node ID Range: [57341, 57500], Length: 160 rows
+  - Node ID Range: [57512, 57734], Length: 223 rows
+  - Node ID Range: [57737, 57942], Length: 206 rows
+  - Node ID Range: [57951, 59444], Length: 1494 rows
+  - Node ID Range: [59479, 59741], Length: 263 rows
+  - Node ID Range: [60325, 60554], Length: 230 rows
+  - Node ID Range: [60555, 60799], Length: 245 rows
+  - Node ID Range: [60881, 61042], Length: 162 rows
+  - Node ID Range: [61197, 61925], Length: 729 rows
+  - Node ID Range: [62013, 62149], Length: 137 rows
+  - Node ID Range: [62257, 62498], Length: 242 rows
+  - Node ID Range: [62774, 63834], Length: 1061 rows
+  - Node ID Range: [63837, 64002], Length: 166 rows
+  - Node ID Range: [64098, 64268], Length: 171 rows
+  - Node ID Range: [64318, 64837], Length: 520 rows
+  - Node ID Range: [64856, 65042], Length: 187 rows
+  - Node ID Range: [65064, 65246], Length: 183 rows
+  - Node ID Range: [65249, 65491], Length: 243 rows
+  - Node ID Range: [65494, 65754], Length: 261 rows
+--- End of Statistics ---
+
+Processed 2103 small bands and 118 large bands
+
+Simulation complete. Final statistics will be reported.
+
+--- Simulation Statistics Report ---
+Total Execution Cycles: 6911114.0
+Total DRAM Data Read: 7.82 MB
+
+Cycle Breakdown:
+  - hdn_spm_access: 187518 cycles (2.71%)
+  - computation: 320910.0 cycles (4.64%)
+  - dram_access: 6402400 cycles (92.64%)
+  - glc_access: 286 cycles (0.00%)
+
+Cache Performance:
+  - HDN-SPM: 166183/251550 hits (66.06% hit rate)
+  - Global Cache: 8/286 hits (2.80% hit rate)
+    (LDN accesses in large bands: 286)
+--- End of Report ---

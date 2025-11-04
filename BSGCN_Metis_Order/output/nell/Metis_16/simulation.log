@@ -1,0 +1,198 @@
+Timestamp: 2025-10-28T19:43:20.270294
+Dataset: nell
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/nell
+
+Dataset Overview:
+  Nodes: 65755
+  Directed edges: 251550
+  Undirected edges: 125775
+  Average degree (undirected): 3.83
+
+Configuration Parameters:
+  T_ABS: 8
+  Smoothing window: 1 (mode: mean)
+  T_BAND: 128
+  HDN Top-K per partition: 4096
+  Requested partitions: 16
+  HDN-SPM size: 512 KB
+  Global Cache size: 32 KB
+  SMB size: 12 KB
+  Index CAM size: 12 KB
+  Feature length: 16
+  Feature dtype bytes: 8
+  MAC array shape: (1, 16)
+  Large band profiling rows: 32
+  Window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+
+Partition Summary:
+  Strategy: metis
+  Requested partitions: 16
+  Actual partitions: 16
+  Partition sizes: [3989, 3989, 4086, 4233, 4135, 3994, 4018, 4133, 4233, 4233, 4233, 4000, 4018, 4167, 4061, 4233]
+
+Band Summary:
+  Total bands: 1939
+  Small bands: 1831
+  Large bands: 108
+  HDNs in small bands: 19140 (29.48% of all HDNs)
+  HDNs in large bands: 45783 (70.52% of all HDNs)
+  LDNs in small bands: 39 (4.69% of all LDNs)
+  LDNs in large bands: 793 (95.31% of all LDNs)
+  Large band details:
+    - Rows [0, 423], length: 424
+    - Rows [508, 962], length: 455
+    - Rows [1114, 1643], length: 530
+    - Rows [1732, 2133], length: 402
+    - Rows [2195, 2460], length: 266
+    - Rows [2461, 3030], length: 570
+    - Rows [3032, 3979], length: 948
+    - Rows [3981, 4227], length: 247
+    - Rows [4960, 5358], length: 399
+    - Rows [5393, 5567], length: 175
+    - Rows [5801, 6178], length: 378
+    - Rows [6335, 6521], length: 187
+    - Rows [6845, 7060], length: 216
+    - Rows [7479, 7731], length: 253
+    - Rows [7735, 7863], length: 129
+    - Rows [7952, 8348], length: 397
+    - Rows [8802, 8930], length: 129
+    - Rows [9339, 9527], length: 189
+    - Rows [9584, 9737], length: 154
+    - Rows [10012, 10155], length: 144
+    - Rows [10159, 11227], length: 1069
+    - Rows [11345, 11495], length: 151
+    - Rows [11621, 11787], length: 167
+    - Rows [11789, 11976], length: 188
+    - Rows [11980, 13129], length: 1150
+    - Rows [13133, 14512], length: 1380
+    - Rows [14514, 16665], length: 2152
+    - Rows [17295, 17521], length: 227
+    - Rows [17601, 17890], length: 290
+    - Rows [18167, 18531], length: 365
+    - Rows [18599, 19145], length: 547
+    - Rows [19147, 19509], length: 363
+    - Rows [19562, 20161], length: 600
+    - Rows [20163, 21103], length: 941
+    - Rows [21308, 21439], length: 132
+    - Rows [21544, 22060], length: 517
+    - Rows [22137, 22385], length: 249
+    - Rows [22387, 23123], length: 737
+    - Rows [23144, 23301], length: 158
+    - Rows [23409, 24219], length: 811
+    - Rows [24270, 24946], length: 677
+    - Rows [25706, 25916], length: 211
+    - Rows [25917, 26236], length: 320
+    - Rows [26311, 26494], length: 184
+    - Rows [26499, 26660], length: 162
+    - Rows [26661, 26907], length: 247
+    - Rows [27032, 27279], length: 248
+    - Rows [27280, 27414], length: 135
+    - Rows [27416, 27693], length: 278
+    - Rows [27695, 28536], length: 842
+    - Rows [28544, 28973], length: 430
+    - Rows [29373, 29510], length: 138
+    - Rows [29511, 29710], length: 200
+    - Rows [29716, 29913], length: 198
+    - Rows [29914, 30173], length: 260
+    - Rows [30174, 30420], length: 247
+    - Rows [30422, 30556], length: 135
+    - Rows [30558, 30720], length: 163
+    - Rows [30722, 30896], length: 175
+    - Rows [30898, 31438], length: 541
+    - Rows [31439, 32503], length: 1065
+    - Rows [34544, 34812], length: 269
+    - Rows [34988, 36062], length: 1075
+    - Rows [36101, 36585], length: 485
+    - Rows [36779, 37129], length: 351
+    - Rows [37134, 38486], length: 1353
+    - Rows [38488, 39024], length: 537
+    - Rows [39026, 40461], length: 1436
+    - Rows [40867, 41042], length: 176
+    - Rows [41803, 41935], length: 133
+    - Rows [42413, 42678], length: 266
+    - Rows [43174, 43507], length: 334
+    - Rows [43604, 43766], length: 163
+    - Rows [44046, 44257], length: 212
+    - Rows [44259, 44395], length: 137
+    - Rows [44772, 45144], length: 373
+    - Rows [45232, 45964], length: 733
+    - Rows [46253, 46482], length: 230
+    - Rows [46600, 47634], length: 1035
+    - Rows [47725, 47922], length: 198
+    - Rows [48130, 48291], length: 162
+    - Rows [48293, 49200], length: 908
+    - Rows [51345, 51476], length: 132
+    - Rows [52128, 52263], length: 136
+    - Rows [52810, 52943], length: 134
+    - Rows [52945, 53162], length: 218
+    - Rows [53224, 53496], length: 273
+    - Rows [53988, 54144], length: 157
+    - Rows [55063, 55327], length: 265
+    - Rows [55329, 55495], length: 167
+    - Rows [55497, 55724], length: 228
+    - Rows [55845, 55990], length: 146
+    - Rows [56033, 56248], length: 216
+    - Rows [56269, 56975], length: 707
+    - Rows [56997, 57155], length: 159
+    - Rows [57158, 58392], length: 1235
+    - Rows [58421, 58723], length: 303
+    - Rows [58926, 59123], length: 198
+    - Rows [59125, 59650], length: 526
+    - Rows [59724, 59859], length: 136
+    - Rows [59861, 60299], length: 439
+    - Rows [60640, 61317], length: 678
+    - Rows [61319, 62110], length: 792
+    - Rows [62402, 62618], length: 217
+    - Rows [62620, 63345], length: 726
+    - Rows [63347, 64781], length: 1435
+    - Rows [64782, 65069], length: 288
+    - Rows [65298, 65754], length: 457
+
+Runtime log:
+Starting BSGCN simulation...
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/nell
+Dataset summary -> nodes: 65755, directed edges: 251550, undirected edges: 125775, avg degree: 3.83
+Key configuration parameters:
+  - T_ABS: 8, smoothing window: 1 (mode: mean)
+  - T_BAND: 128
+  - HDN Top-K per partition: 4096, requested partitions: 16
+  - HDN-SPM size: 512 KB, Global Cache size: 32 KB
+  - SMB size: 12 KB, Index CAM size: 12 KB
+  - Feature length: 16 (dtype bytes: 8), MAC array shape: (1, 16)
+  - Large band profiling rows: 32, window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+Performing Metis reordering...
+Metis reordering with 16 parts complete.
+Partition sizes (after Metis reorder): [3989, 3989, 4086, 4233, 4135, 3994, 4018, 4133, 4233, 4233, 4233, 4000, 4018, 4167, 4061, 4233]
+Identifying HDNs using local partition-wise strategy...
+Identified 64923 unique HDNs across all partitions.
+Partitioning matrix into bands...
+
+--- Band Statistics ---
+Total number of bands: 1939
+Number of small bands: 1831
+Number of large bands: 108
+
+LDN distribution across bands:
+  - Small bands: 39 LDNs (4.69% of all LDNs)
+  - Large bands: 793 LDNs (95.31% of all LDNs)
+
+HDN distribution across bands:
+  - Small bands: 19140 HDNs (29.48% of all HDNs)
+  - Large bands: 45783 HDNs (70.52% of all HDNs)
+Processed 1831 small bands and 108 large bands
+
+Simulation complete. Final statistics will be reported.
+
+--- Simulation Statistics Report ---
+Total Execution Cycles: 660913.0
+Total DRAM Data Read: 0.10 MB
+
+Cycle Breakdown:
+  - hdn_spm_access: 250718 cycles (37.94%)
+  - computation: 326995.0 cycles (49.48%)
+  - dram_access: 83200 cycles (12.59%)
+
+Cache Performance:
+  - HDN-SPM: 170917/251550 hits (67.95% hit rate)
+  - Global Cache: No LDN accesses recorded
+--- End of Report ---

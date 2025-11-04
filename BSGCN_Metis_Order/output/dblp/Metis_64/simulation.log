@@ -1,0 +1,88 @@
+Timestamp: 2025-10-28T17:33:24.389478
+Dataset: dblp
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/txt_file/dblp
+
+Dataset Overview:
+  Nodes: 39918
+  Directed edges: 150664
+  Undirected edges: 75332
+  Average degree (undirected): 3.77
+
+Configuration Parameters:
+  T_ABS: 18.75
+  Smoothing window: 3 (mode: mean)
+  T_BAND: 128
+  HDN Top-K per partition: 4096
+  Requested partitions: 64
+  HDN-SPM size: 512 KB
+  Global Cache size: 64 KB
+  SMB size: 12 KB
+  Index CAM size: 12 KB
+  Feature length: 16
+  Feature dtype bytes: 8
+  MAC array shape: (1, 16)
+  Large band profiling rows: 32
+  Window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+
+Partition Summary:
+  Strategy: metis
+  Requested partitions: 64
+  Actual partitions: 64
+  Partition sizes: [625, 626, 628, 623, 624, 625, 602, 636, 625, 626, 616, 628, 623, 623, 607, 642, 623, 624, 622, 625, 608, 634, 626, 626, 634, 612, 624, 625, 628, 613, 627, 628, 626, 626, 633, 610, 607, 636, 607, 637, 624, 624, 625, 625, 628, 629, 630, 612, 632, 633, 629, 602, 634, 614, 624, 625, 623, 624, 623, 624, 599, 633, 631, 631]
+
+Band Summary:
+  Total bands: 1
+  Small bands: 0
+  Large bands: 1
+  HDNs in small bands: 0 (0.00% of all HDNs)
+  HDNs in large bands: 39918 (100.00% of all HDNs)
+  LDNs: none detected (all nodes classified as HDNs)
+  Large band details:
+    - Rows [0, 39917], length: 39918
+
+Runtime log:
+Starting BSGCN simulation...
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/txt_file/dblp
+Dataset summary -> nodes: 39918, directed edges: 150664, undirected edges: 75332, avg degree: 3.77
+Key configuration parameters:
+  - T_ABS: 18.75, smoothing window: 3 (mode: mean)
+  - T_BAND: 128
+  - HDN Top-K per partition: 4096, requested partitions: 64
+  - HDN-SPM size: 512 KB, Global Cache size: 64 KB
+  - SMB size: 12 KB, Index CAM size: 12 KB
+  - Feature length: 16 (dtype bytes: 8), MAC array shape: (1, 16)
+  - Large band profiling rows: 32, window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+Performing Metis reordering...
+Metis reordering with 64 parts complete.
+Partition sizes (after Metis reorder): [625, 626, 628, 623, 624, 625, 602, 636, 625, 626, 616, 628, 623, 623, 607, 642, 623, 624, 622, 625, 608, 634, 626, 626, 634, 612, 624, 625, 628, 613, 627, 628, 626, 626, 633, 610, 607, 636, 607, 637, 624, 624, 625, 625, 628, 629, 630, 612, 632, 633, 629, 602, 634, 614, 624, 625, 623, 624, 623, 624, 599, 633, 631, 631]
+Identifying HDNs using local partition-wise strategy...
+Identified 39918 unique HDNs across all partitions.
+Partitioning matrix into bands...
+
+--- Band Statistics ---
+Total number of bands: 1
+Number of small bands: 0
+Number of large bands: 1
+
+LDN distribution across bands:
+  - No LDNs detected; all nodes are classified as HDNs.
+
+HDN distribution across bands:
+  - Small bands: 0 HDNs (0.00% of all HDNs)
+  - Large bands: 39918 HDNs (100.00% of all HDNs)
+Processed 0 small bands and 1 large bands
+
+Simulation complete. Final statistics will be reported.
+
+--- Simulation Statistics Report ---
+Total Execution Cycles: 451992.0
+Total DRAM Data Read: 0.00 MB
+
+Cycle Breakdown:
+  - hdn_spm_access: 150664 cycles (33.33%)
+  - computation: 301328.0 cycles (66.67%)
+
+Cache Performance:
+  - HDN-SPM: 110747/150664 hits (73.51% hit rate)
+  - Global Cache: No LDN accesses recorded
+--- End of Report ---

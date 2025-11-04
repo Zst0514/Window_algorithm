@@ -1,0 +1,158 @@
+Timestamp: 2025-10-28T20:36:30.326911
+Dataset: proteins
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/ogbn/
+
+Dataset Overview:
+  Nodes: 132534
+  Directed edges: 39561252
+  Undirected edges: 39561252
+  Average degree (undirected): 597.00
+
+Configuration Parameters:
+  T_ABS: 298.5
+  Smoothing window: 2 (mode: mean)
+  T_BAND: 128
+  HDN Top-K per partition: 4096
+  Requested partitions: 4
+  HDN-SPM size: 512 KB
+  Global Cache size: 32 KB
+  SMB size: 12 KB
+  Index CAM size: 12 KB
+  Feature length: 16
+  Feature dtype bytes: 8
+  MAC array shape: (1, 16)
+  Large band profiling rows: 32
+  Window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+
+Partition Summary:
+  Strategy: metis
+  Requested partitions: 4
+  Actual partitions: 4
+  Partition sizes: [33133, 33134, 33133, 33134]
+
+Band Summary:
+  Total bands: 25968
+  Small bands: 25902
+  Large bands: 66
+  HDNs in small bands: 15544 (94.87% of all HDNs)
+  HDNs in large bands: 840 (5.13% of all HDNs)
+  LDNs in small bands: 82551 (71.07% of all LDNs)
+  LDNs in large bands: 33599 (28.93% of all LDNs)
+  Large band details:
+    - Rows [15104, 15253], length: 150
+    - Rows [16335, 16486], length: 152
+    - Rows [17931, 18060], length: 130
+    - Rows [18182, 19776], length: 1595
+    - Rows [19777, 24701], length: 4925
+    - Rows [24704, 24846], length: 143
+    - Rows [24864, 25256], length: 393
+    - Rows [25795, 26654], length: 860
+    - Rows [27119, 27372], length: 254
+    - Rows [27375, 27944], length: 570
+    - Rows [28122, 28541], length: 420
+    - Rows [28544, 28741], length: 198
+    - Rows [28900, 29043], length: 144
+    - Rows [29234, 29388], length: 155
+    - Rows [29389, 29563], length: 175
+    - Rows [29640, 30180], length: 541
+    - Rows [30181, 30367], length: 187
+    - Rows [30430, 30683], length: 254
+    - Rows [30684, 30818], length: 135
+    - Rows [30847, 32157], length: 1311
+    - Rows [32223, 32389], length: 167
+    - Rows [32461, 33133], length: 673
+    - Rows [36174, 36312], length: 139
+    - Rows [36403, 36848], length: 446
+    - Rows [36849, 37101], length: 253
+    - Rows [37102, 39106], length: 2005
+    - Rows [48520, 48756], length: 237
+    - Rows [49047, 49178], length: 132
+    - Rows [49873, 50022], length: 150
+    - Rows [50234, 50418], length: 185
+    - Rows [50508, 50648], length: 141
+    - Rows [50667, 50796], length: 130
+    - Rows [50825, 51236], length: 412
+    - Rows [51244, 51393], length: 150
+    - Rows [51425, 51582], length: 158
+    - Rows [51706, 52181], length: 476
+    - Rows [52184, 52388], length: 205
+    - Rows [52431, 52634], length: 204
+    - Rows [52635, 52814], length: 180
+    - Rows [52815, 55160], length: 2346
+    - Rows [61883, 62142], length: 260
+    - Rows [62419, 62568], length: 150
+    - Rows [62571, 62733], length: 163
+    - Rows [62737, 63123], length: 387
+    - Rows [63134, 63280], length: 147
+    - Rows [63471, 63634], length: 164
+    - Rows [63766, 64162], length: 397
+    - Rows [64165, 65965], length: 1801
+    - Rows [66108, 66241], length: 134
+    - Rows [66824, 66963], length: 140
+    - Rows [67205, 67372], length: 168
+    - Rows [67448, 67594], length: 147
+    - Rows [69854, 71635], length: 1782
+    - Rows [73152, 73291], length: 140
+    - Rows [73532, 73725], length: 194
+    - Rows [73726, 76231], length: 2506
+    - Rows [95517, 95763], length: 247
+    - Rows [95795, 96010], length: 216
+    - Rows [96567, 96752], length: 186
+    - Rows [97624, 98548], length: 925
+    - Rows [98550, 99399], length: 850
+    - Rows [99515, 99666], length: 152
+    - Rows [115352, 115610], length: 259
+    - Rows [130753, 131315], length: 563
+    - Rows [131569, 131866], length: 298
+    - Rows [131952, 132533], length: 582
+
+Runtime log:
+Starting BSGCN simulation...
+Dataset directory: /home/zhangshangtong/Window_algorithm/GCNAX/Nowtest/datasets/ogbn/
+Dataset summary -> nodes: 132534, directed edges: 39561252, undirected edges: 39561252, avg degree: 597.00
+Key configuration parameters:
+  - T_ABS: 298.5, smoothing window: 2 (mode: mean)
+  - T_BAND: 128
+  - HDN Top-K per partition: 4096, requested partitions: 4
+  - HDN-SPM size: 512 KB, Global Cache size: 32 KB
+  - SMB size: 12 KB, Index CAM size: 12 KB
+  - Feature length: 16 (dtype bytes: 8), MAC array shape: (1, 16)
+  - Large band profiling rows: 32, window shapes: [(8, 1), (4, 2), (2, 4), (1, 8)]
+Performing Metis reordering...
+Metis reordering with 4 parts complete.
+Partition sizes (after Metis reorder): [33133, 33134, 33133, 33134]
+Identifying HDNs using local partition-wise strategy...
+Identified 16384 unique HDNs across all partitions.
+Partitioning matrix into bands...
+
+--- Band Statistics ---
+Total number of bands: 25968
+Number of small bands: 25902
+Number of large bands: 66
+
+LDN distribution across bands:
+  - Small bands: 82551 LDNs (71.07% of all LDNs)
+  - Large bands: 33599 LDNs (28.93% of all LDNs)
+
+HDN distribution across bands:
+  - Small bands: 15544 HDNs (94.87% of all HDNs)
+  - Large bands: 840 HDNs (5.13% of all HDNs)
+Processed 25902 small bands and 66 large bands
+
+Simulation complete. Final statistics will be reported.
+
+--- Simulation Statistics Report ---
+Total Execution Cycles: 4981285963.0
+Total DRAM Data Read: 5933.07 MB
+
+Cycle Breakdown:
+  - dram_access: 4860372500 cycles (97.57%)
+  - computation: 86420672.0 cycles (1.73%)
+  - hdn_spm_access: 29882005 cycles (0.60%)
+  - glc_access: 4610786 cycles (0.09%)
+
+Cache Performance:
+  - HDN-SPM: 28766706/79122504 hits (36.36% hit rate)
+  - Global Cache: 636774/4610786 hits (13.81% hit rate)
+    (LDN accesses in large bands: 4610786)
+--- End of Report ---
